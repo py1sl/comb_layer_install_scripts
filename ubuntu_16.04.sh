@@ -1,13 +1,15 @@
 #!/bin/bash
 # this script builds comblayer on a clean ubuntu 16.04 lts version
+# build comblayer and the latest ess general model
 #
 # run this script by the command ./ubuntu_16.04.sh
 #
 cd $HOME
 #
-sudo apt-get install -y build-essential clang-3.8 git libboost-regex-dev libgsl0-dev libboost-dev
+sudo apt-get install -y build-essential clang-3.8 git libboost-regex-dev libgsl0-dev libboost-dev cmake doxygen
 #
 # need to make a link for clang
+sudo ln -s \usr\bin\clang-3.8 \usr\bin\clang
 #
 mkdir comblayer
 cd comblayer
@@ -25,4 +27,4 @@ make
 #
 make -j4 ess
 #
-
+doxygen 

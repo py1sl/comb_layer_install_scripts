@@ -6,10 +6,8 @@
 #
 cd $HOME
 #
-sudo apt-get install -y build-essential clang-3.8 git libboost-regex-dev libgsl0-dev libboost-dev cmake doxygen
+sudo apt-get install -y build-essential clang git libboost-regex-dev libgsl0-dev libboost-dev cmake doxygen
 #
-# need to make a link for clang
-sudo ln -s \usr\bin\clang-3.8 \usr\bin\clang
 #
 mkdir comblayer
 cd comblayer
